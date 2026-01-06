@@ -16,6 +16,12 @@ variable "kms_key_name" {
   default     = "ovh-kms-key"
 }
 
+variable "kms_subsidiary" {
+  description = "OVH subsidiary for the KMS resource."
+  type        = string
+  default     = "FR"
+}
+
 variable "create_credential" {
   description = "Whether to create a KMS credential for access."
   type        = bool
