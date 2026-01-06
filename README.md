@@ -27,7 +27,7 @@ export OVH_CONSUMER_KEY=your_consumer_key
 
 ```hcl
 module "kms" {
-  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git"
+  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git?ref=ovh/v1.0.0"
 
   kms_key_name           = "my-kms-key"
   region                 = "eu-west-rbx"
@@ -42,7 +42,7 @@ module "kms" {
 
 ```hcl
 module "kms" {
-  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git"
+  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git?ref=ovh/v1.0.0"
 
   kms_key_name             = "production-kms"
   region                   = "eu-west-rbx"
@@ -71,7 +71,7 @@ output "credential_cert" {
 
 ```hcl
 module "kms" {
-  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git"
+  source = "git::https://github.com/ansforge/terraform-module-ovh-kms.git?ref=ovh/v1.0.0"
 
   kms_key_name      = "my-kms-key"
   region            = "eu-west-rbx"
