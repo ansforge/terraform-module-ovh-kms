@@ -1,9 +1,3 @@
-variable "project_id" {
-  description = "OVH project id (optional)."
-  type        = string
-  default     = ""
-}
-
 variable "region" {
   description = "OVH region for the KMS resource ('eu-west-rbx')."
   type        = string
