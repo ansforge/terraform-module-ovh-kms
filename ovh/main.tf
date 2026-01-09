@@ -1,5 +1,5 @@
 resource "ovh_okms" "kms" {
-  ovh_subsidiary = "FR"
+  ovh_subsidiary = var.kms_subsidiary
   display_name   = var.kms_key_name
   region         = var.region
 }

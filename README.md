@@ -53,8 +53,6 @@ module "kms" {
     "urn:v1:eu:identity:account:1111-ovh",
     "urn:v1:eu:identity:user:1111-ovh/user.name"
   ]
-  credential_validity_from = "2024-01-01T00:00:00Z"
-  credential_validity_to   = "2025-12-31T23:59:59Z"
 }
 
 output "kms_endpoint" {
